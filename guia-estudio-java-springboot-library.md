@@ -33,8 +33,8 @@ El challenge exige Java 21 explícitamente y pide aprovechar sus features modern
 
 ### Objetivos puntuales
 
-- [ ] **1.1** — Instalar JDK 21 (Temurin o GraalVM), Maven o Gradle, e IntelliJ IDEA (o VS Code con Extension Pack for Java). Verificar con `java --version` que la versión es 21+.
-- [ ] **1.2** — Estudiar **Records** de Java 21: crear al menos 3 Records (ej. `BookDTO`, `UserDTO`, `ErrorResponse`) y entender que son inmutables, tienen `equals`, `hashCode` y `toString` auto-generados, y sirven como DTOs ideales.
+- [x] **1.1** — Instalar JDK 21 (Temurin o GraalVM), Maven o Gradle, e IntelliJ IDEA (o VS Code con Extension Pack for Java). Verificar con `java --version` que la versión es 21+.
+- [x] **1.2** — Estudiar **Records** de Java 21: crear al menos 3 Records (ej. `BookDTO`, `UserDTO`, `ErrorResponse`) y entender que son inmutables, tienen `equals`, `hashCode` y `toString` auto-generados, y sirven como DTOs ideales.
 - [ ] **1.3** — Estudiar **Pattern Matching con `instanceof`**: escribir un método que reciba un `Object` y use `if (obj instanceof String s)` para extraer el tipo sin cast manual. Luego practicar con **Switch Expressions** mejoradas usando `case String s -> ...`.
 - [ ] **1.4** — Estudiar **Sealed Classes / Interfaces**: crear una jerarquía `sealed interface LibraryEvent permits BookReserved, ReviewSubmitted`. Entender que el compilador garantiza que todos los subtipos están cubiertos en un switch.
 - [ ] **1.5** — Estudiar **Virtual Threads (Project Loom)**: entender la diferencia entre threads de plataforma (OS-level, costosos) y virtual threads (gestionados por la JVM, miles simultáneos sin problema). Configurar Spring Boot para usarlos con `spring.threads.virtual.enabled=true`.
